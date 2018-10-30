@@ -1,0 +1,75 @@
+:root {
+  --main-bg-color: rgb(133, 165, 212);
+  --main-text-color: rgb(85, 114, 214);
+  --secondary-text-color: rgb(120, 120, 120);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: var(--main-bg-color);
+}
+
+/* ------------------ */
+
+.offers {
+  display: flex;
+  width: 60%;
+  margin: 10% auto 0 auto;
+  padding: 15px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 7px 27px 0px rgba(50, 50, 50, 0.75);
+}
+
+/* OFFER ITEM */
+
+.offers__item {
+  width: 33.3%;
+  padding: 15px 75px;
+  text-align: center;
+}
+
+.offers__item:hover {
+  cursor: pointer;
+  background: #eee;
+}
+
+.offer__image {
+  margin-bottom: 25px;
+}
+
+.offer__image img {
+  height: 70px;
+}
+
+.offer__title {
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  margin-bottom: 15px;
+}
+
+.offer__content {
+  font-size: 14px;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 15px;
+}
+
+.offer__price {
+  color: var(--main-text-color);
+  font-weight: 500;
+}
+
+/* OFFER PRICE */
+
+.price__amount {
+  font-size: 28px;
+}

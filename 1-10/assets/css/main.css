@@ -1,0 +1,32 @@
+@import url("./colors.css");
+@import url("./fonts.css");
+@import url("./navbar.css");
+@import url("./story.css");
+@import url("./features.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.keynote {
+  height: 50vh;
+  border-bottom: 0.3px solid var(--faded-text);
+  background-image: url("../img/watches.jpg");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: 90% 60%;
+}
+
+.buynow__image img {
+  width: 300px;
+}

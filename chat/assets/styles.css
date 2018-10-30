@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+/* rgb(106, 150, 216) - header */
+/* rgb(230, 237, 246) - odd */
+/* rgb(242, 242, 242) - even */
+/* rgb(255, 194, 193) - error */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(206, 221, 232), rgb(126, 156, 180));
+  font-family: "Roboto", sans-serif;
+}
+
+.chat {
+  width: 400px;
+  background: #fff;
+  margin: 150px auto;
+}
+
+.chat__header {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(106, 150, 216);
+  margin-bottom: 15px;
+}
+
+.chat__title {
+  display: flex;
+  align-items: center;
+}
+
+.chat__dot {
+  display: inline-block;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  margin-right: 15px;
+}
+
+.chat__name {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.chat__inner {
+  padding: 15px 15px 5px 15px;
+}
+
+.chat__hr {
+  background: #ddd;
+  height: 1px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.chat__hr.chat__date {
+  margin-bottom: 25px;
+}
+
+.chat__today {
+  position: absolute;
+  top: -16px;
+  left: 150px;
+  color: #ddd;
+  z-index: 3;
+  text-transform: uppercase;
+  font-size: 12px;
+  background: #fff;
+  padding: 10px;
+}
+
+.chat__messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat__message {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.chat__message__date {
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.chat__message__content {
+  display: inline-flex;
+  padding: 10px;
+}
+
+.chat__message:nth-of-type(even) {
+  align-self: flex-end;
+}
+
+.chat__message:nth-of-type(even) .chat__message__date {
+  align-self: flex-end;
+}
+
+.chat__message:nth-of-type(odd) .chat__message__content {
+  background: rgb(230, 237, 246);
+}
+
+.chat__message:nth-of-type(even) .chat__message__content {
+  background: rgb(242, 242, 242);
+}
+
+.chat__message.chat__error .chat__message__content {
+  background: rgb(255, 194, 193);
+}
+
+.chat__form {
+  display: flex;
+  align-items: center;
+}
+
+.chat__mymessage {
+  width: 90%;
+  height: 100%;
+  padding: 15px 0 15px 0;
+  border: none;
+  line-height: 100%;
+  font-size: 16px;
+}
+
+.chat__mymessage:focus {
+  outline: none;
+  border: none;
+}
+
+.chat__send {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: rgb(106, 150, 216);
+}

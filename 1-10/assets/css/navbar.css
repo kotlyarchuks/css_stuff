@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  font-size: var(--common-size);
+  font-weight: 500;
+}
+
+.navbar__menu a {
+  text-decoration: none;
+  color: var(--faded-text);
+}
+
+.navbar__menu input {
+  border: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--faded-text);
+}
+
+.navbar__menu input:focus {
+  outline: none;
+}

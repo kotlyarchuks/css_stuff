@@ -1,0 +1,32 @@
+.story {
+  padding-top: 100px;
+  width: 370px;
+}
+
+.story__title {
+  font-size: var(--big-title);
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.story__content {
+  color: var(--faded-text);
+  font-size: var(--common-size);
+  font-weight: 500;
+  line-height: 1.6;
+  padding-left: 25px;
+  border-left: 2px solid var(--faded-text);
+  margin-bottom: 30px;
+}
+
+.story__button a {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--accent-color);
+}

@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: rgb(248, 235, 233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  height: 15px;
+  width: 20px;
+}
+
+.card {
+  width: 1000px;
+  min-height: 600px;
+  background: #fff;
+  display: flex;
+  box-shadow: 0 50px 60px -25px rgba(204, 144, 127, 0.9);
+}
+
+.card__left {
+  width: 35%;
+  padding: 30px;
+  background-image: url("./img/background.jpg");
+  background-size: 100% 100%;
+  background: #fff cover center no-repeat;
+}
+
+.card__back {
+  display: flex;
+  align-items: center;
+  color: rgb(98, 122, 153);
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.card__back svg {
+  margin-right: 5px;
+}
+
+.card__right {
+  width: 65%;
+  padding: 30px;
+}
+
+.card__countries {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin-left: auto;
+  margin-bottom: 100px;
+}
+
+.card__countries a {
+  text-decoration: none;
+  color: #ababab;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.card__countries a.active {
+  color: #333;
+}
+
+.card__main {
+  padding: 0 60px;
+}
+
+.card__title {
+  font-size: 54px;
+  font-weight: 500;
+  font-family: "Playfair Display", sans-serif;
+  margin-bottom: 20px;
+}
+
+.card__subtitle {
+  font-family: "Playfair Display", sans-serif;
+  margin-bottom: 30px;
+}
+
+.card__content {
+  display: flex;
+}
+
+.card__text {
+  padding: 0 30px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image img {
+  width: 180px;
+  margin-bottom: 12px;
+}
+
+.card__image::after {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 40px;
+  left: 70px;
+  content: "";
+  background: rgba(251, 246, 249, 0.8) url("./img/play.svg") center no-repeat;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.card__image-subtitle {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.dashes {
+  letter-spacing: -10px;
+}

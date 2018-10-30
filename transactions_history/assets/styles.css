@@ -1,0 +1,148 @@
+/* #f2f2f2 - left */
+/* #8797c6 - minus */
+/* #8ace5e - plus */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: #f7cd75;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+}
+
+.card {
+  width: 900px;
+  height: 500px;
+  background: #fff;
+  display: flex;
+  box-shadow: 0;
+}
+
+.card__left {
+  width: 35%;
+  background: #f2f2f2;
+  padding: 40px;
+  overflow: auto;
+}
+
+.card__left__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.card__left__plus {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.cards__item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  border: 0.5px solid #ccc;
+  margin-bottom: 25px;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cards__item:hover {
+  border: 2px solid #8793c6;
+  cursor: pointer;
+}
+
+.cards__item.active {
+  border: 2px solid #8793c6;
+}
+
+.cards__item__image img {
+  width: 65px;
+  margin-bottom: 10px;
+}
+
+.cards__item__number {
+  margin-bottom: 10px;
+}
+
+.card__right {
+  width: 65%;
+  padding: 40px;
+  overflow: auto;
+}
+
+.card__right__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.card__right__balance {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card__right__transactions {
+  border-top: 1px solid #ccc;
+  padding-top: 40px;
+}
+
+.transactions__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.transactions__item__icon {
+  width: 10%;
+}
+
+.transactions__item__icon img {
+  width: 25px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 0.5px solid #ccc;
+}
+
+.transactions__item__content {
+  width: 80%;
+  margin-left: 15px;
+}
+
+.transactions__item__title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.transactions__item__subtitle {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.transactions__item__amount {
+  width: 10%;
+}
+
+.transactions__item.plus .transactions__item__amount {
+  color: #8ace5e;
+  font-weight: 700;
+}
+
+.transactions__item.minus .transactions__item__amount {
+  color: #8797c6;
+  font-weight: 700;
+}

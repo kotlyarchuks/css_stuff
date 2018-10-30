@@ -1,0 +1,8 @@
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__column {
+  width: 30%;
+}

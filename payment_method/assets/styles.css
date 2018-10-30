@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("./img/background.jpg");
+  background: #fff cover no-repeat;
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  margin: 150px auto;
+  width: 300px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 22px 50px rgba(14, 21, 47, 0.2),
+    0 8px 20px rgba(14, 21, 47, 0.2);
+}
+
+.card__header {
+  text-align: center;
+  padding: 15px;
+}
+
+.card__dots {
+  font-size: 56px;
+  line-height: 1px;
+  vertical-align: text-top;
+  margin-bottom: 35px;
+  color: #ccc;
+}
+
+.card__dots .active {
+  color: #888;
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #222;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.item {
+  height: 60px;
+  padding: 20px;
+  display: flex;
+  align-content: center;
+  border-top: 0.3px solid #ccc;
+}
+
+.item:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.item-active {
+  position: relative;
+}
+
+.item-active::after {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  background: url("./img/check.svg");
+  background-size: 25px 25px;
+  right: 15px;
+  top: 18px;
+  color: #fff;
+}
+
+.item-active .item__text {
+  color: #222;
+}
+
+.item__image img {
+  width: 40px;
+}
+
+.item__text {
+  margin-left: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #aaa;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.card__button {
+  position: relative;
+  display: block;
+  height: 50px;
+  padding: 17px;
+  background: rgb(91, 146, 228);
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  transition: background 0.15s ease-in-out;
+}
+
+.card__button:active {
+  top: 2px;
+}
+
+.card__button:hover {
+  background: rgb(111, 159, 231);
+}
+
+.card__button span {
+  position: relative;
+}
+
+.card__button span::after {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: url("./img/arrow.svg");
+  background-size: 15px 15px;
+  right: -20px;
+  top: 0px;
+}

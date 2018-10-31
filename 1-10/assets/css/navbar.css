@@ -17,12 +17,19 @@
 .navbar__menu a {
   text-decoration: none;
   color: var(--faded-text);
+  padding-bottom: 10px;
+}
+
+.navbar__menu a:hover{
+  color: var(--faded-hover-text);
+  border-bottom: 1px solid var(--faded-hover-text);
 }
 
 .navbar__menu input {
   border: none;
   padding-bottom: 3px;
   border-bottom: 1px solid var(--faded-text);
+  padding-bottom: 10px;
 }
 
 .navbar__menu input:focus {

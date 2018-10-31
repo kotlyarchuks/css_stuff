@@ -1,4 +1,6 @@
 :root {
   --faded-text: #a3a3a3;
+  --faded-hover-text: #7a7a7a;
+  --main-text: #444;
   --accent-color: #ea625c;
 }
